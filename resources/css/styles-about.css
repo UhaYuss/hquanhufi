@@ -1,0 +1,146 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Tilt+Warp', sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    /* background-color: rgb(152, 210, 231); */
+    background-image: url(../img/galaxy1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-rendering: optimizeLegibility;
+
+}
+
+/*-----------------------------------*/
+/*------------REUSED-----------------*/
+/*-----------------------------------*/
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+/*-----------------------------------*/
+/*------------CONTAINT---------------*/
+/*-----------------------------------*/
+.containt{
+    max-width: 1140px;
+    position: relative;
+    transform: translate(25%,5%);
+}
+
+/*-----------------------------------*/
+/*------------HEADER-----------------*/
+/*-----------------------------------*/
+.flex-header {
+    background-image:url("../img/chaos\ blueeye.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 5px rgb(21, 73, 112);
+    display: inline-flex;
+    flex-direction: row;
+    max-width: 1440px;
+    max-height: 250px;
+
+}
+
+.logo {
+    margin-top: 100px;
+    width: 300px;
+}
+.main-nav{
+    margin-top: 275px;
+    text-align: center;
+    list-style: none;
+    margin-right: 10px;
+    margin-left: 240px;
+}
+.main-nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.main-nav li a
+{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 120%;
+    font-weight: 1000%;
+    background-color: rgb(99, 104, 113);
+    padding: 5px 10px;
+    border-radius: 20px;
+    
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    background-color: rgb(99, 180, 208);
+    color: #ffffff;
+    text-decoration: underline;
+}
+/*-----------------------------------*/
+/*------------INFOR------------------*/
+/*-----------------------------------*/
+.flex-infor{
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    margin-top: -10px;
+}
+.flex-profile{
+    color: rgb(179, 214, 216);
+    padding: 20px 30px 20px 30px;
+    max-width: 50%;
+    margin-bottom:50px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 5px rgb(45, 115, 169);
+}
+.infor-student{
+    padding-left:30px;
+    line-height: 175%;
+    font-size: 112%;
+    font-weight: 800%;
+    list-style: none;
+}
+.title{
+    padding-top: 10px;
+    line-height: 175%;
+    font-size: 112%;
+    font-weight: 800%;
+}
+.infor-student,.skill,.infor-contact{
+    list-style: none;
+}
+.skill{
+    padding-left:35px;
+    padding-top: 3px;
+    line-height: 145%;
+    font-size: 112%;
+    font-weight: 800%;
+}
+.infor-contact{
+    padding-top: 5px;
+    padding-left:30px;
+    line-height: 125%;
+    font-size: 112%;
+    font-weight: 800%;
+}
+video {
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px 5px rgb(45, 115, 169);
+    border: 1px solid #ffffff6f;
+    opacity: 0.96;
+    margin-left: 50px;
+    transition: all 0.5s;
+    position: relative;
+    display: block;
+}
+.fa-regular ,.fa-address-card
+.fa-regular,.fa-keyboard
+.fa-solid ,.fa-envelope{
+padding-right: 8px;
+}

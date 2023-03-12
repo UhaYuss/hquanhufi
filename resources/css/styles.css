@@ -1,0 +1,223 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-family: 'Tilt+Warp',sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(181, 214, 249);
+    text-rendering: optimizeLegibility;
+    
+}
+
+/*-----------------------------------*/
+/*------------REUSED-----------------*/
+/*-----------------------------------*/
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+/*-----------------------------------*/
+/*------------HEADER-----------------*/
+/*-----------------------------------*/
+
+header{
+    background-image: linear-gradient(190deg,rgba(174, 215, 250, 0.4) 20%,rgba(240, 147, 128, 0.2)), url("https://dulich3mien.vn/wp-content/uploads/2021/12/hinh-anh-cho-ben-thanh.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    background-attachment: fixed;
+}
+.logo{
+    width: 220px;
+    float: left;
+    margin-left: 5px;
+    margin-top: -10px;
+    
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+.main-nav{
+    
+    float: right;
+    list-style: none;
+    margin-right: 30px;
+    margin-top: 55px;
+}
+.main-nav li {
+    display: inline-block;
+    margin-right: 40px;
+}
+.main-nav li a
+{
+    text-decoration: none;
+    color: #6f1415;
+    font-size: 140%;
+    font-weight: 1000%;
+    transition: border-bottom 0.5s;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 3px solid #6f1415;
+}
+
+.heading-main-top{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-65%,-65%);
+    width: 1140;
+}
+h1{
+    font-family: 'Tilt+Warp';
+    text-transform: uppercase;
+    font-size: 200%;
+    font-weight: 800%;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    color: #6f1415;
+    line-height: 115%;
+    margin-bottom: 20px;
+}
+.btn{
+    text-decoration: none;
+    color:#ffffff;
+    background-color: #be2722;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin: 0 5px;
+    display: inline-block;
+    width: 170px;
+    text-align: center;
+    transition: all 1s;
+}
+
+.btn:hover,
+.bnt:active{
+    background-color: #711714;
+    color: #ffffff;
+    text-decoration: underline;
+}
+/*-----------------------------------*/
+/*------------SECTION----------------*/
+/*-----------------------------------*/
+.about-section{
+    border-radius: 40px;
+    max-width: 1140px;
+   background-color: rgb(227, 207, 207);
+    margin: 0 auto;
+    box-shadow: 0px 5px 15px 5px rgb(119, 105, 105);
+
+}
+h2{
+    padding-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6f1415;
+    font-size: 150%;
+    font-weight: 700%;
+    text-align: center;
+    margin-top: 20px;
+}
+h2::after{
+    content: " ";
+    display: block;
+    width: 250px;
+    height: 3px;
+    background-color:#a71013 ;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.p-long{
+    text-align: justify;
+    word-spacing: 3px;
+    letter-spacing: 0.75px;
+    width: 900px;
+    font-size: 24px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    
+}
+.p-long::after{
+    content: " ";
+    display: block;
+    height: 80px;
+    margin-bottom: 40px;
+}
+/*-----------------------------------*/
+/*------------FLEX-------------------*/ 
+/*-----------------------------------*/
+.flex-container{
+    margin-left: 20px;
+    max-width: 1140px;
+    display:inline-flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.flex-img{
+    width: 1140px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.flex-img img{
+    border:5px solid rgb(138, 204, 254);
+    border-radius: 20px;
+    width: 90%;
+    box-shadow: 0px 5px 15px 5px rgb(21, 73, 112);
+    transition: all .7s;
+}
+.img-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-65%,120%);
+    opacity: 0;
+    transition: all .7s;
+}
+.flex-img:hover img,
+.flex-img:active img{
+    zoom: 200%;
+    filter: brightness(55%) blur(2px);
+}
+.flex-img:hover .img-title,
+.flex-img:active .img-title{
+    transform: translate(-65%,-50%);
+    opacity: 1;
+}
+/*-----------------------------------*/
+/*------------FOOTER-----------------*/ 
+/*-----------------------------------*/
+footer{
+    margin-top: 40px;
+    background-color: rgb(68, 98, 135);
+}
+.infor-student{
+    padding-top: 20px;
+    color: white;
+    font-size: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.coppy-right{
+    text-align: center;
+    color: white;
+}
+.link-infor{
+    color: white;
+    text-decoration: none;
+}
+.logo-footer{
+    position: relative;
+    transform: translate(380%,-12%);
+    width: 170px;
+}

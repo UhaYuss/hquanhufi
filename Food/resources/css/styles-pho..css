@@ -1,0 +1,81 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-family: 'Tilt+Warp',sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(253, 187, 187);
+    text-rendering: optimizeLegibility;
+    
+}
+
+/*-----------------------------------*/
+/*------------REUSED-----------------*/
+/*-----------------------------------*/
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+/*-----------------------------------*/
+/*------------HEADER-----------------*/
+/*-----------------------------------*/
+.control{
+    margin: 0 auto;
+    max-width: 1140px;
+    border-bottom: 1px solid rgba(94, 117, 198, 0.648);
+}
+h1{
+    margin-top: 50px;
+    margin-left: 90px;
+    font-size: 300%;
+}
+.btn{
+    margin-right: 120px;
+    margin-top: -60px;
+    float: right;
+    text-decoration: none;
+    color:#ffffff;
+    background-color: #be2722;
+    padding: 12px 20px;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+    transition: all 1s;
+}
+.btn:hover,
+.bnt:active{
+    background-color: #711714;
+    color: #ffffff;
+    text-decoration: underline;
+}
+.infor-food{
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.img-food{
+    border-radius: 20px;
+    position: relative;
+    width: 1040px;
+    box-shadow: 0px 5px 15px 5px rgb(99, 65, 65);
+    transform: translate(26%,5%);
+}
+p{
+    background-color: rgb(181, 214, 249);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 5px rgb(21, 73, 112);
+    text-align: justify;
+    word-spacing: 3px;
+    letter-spacing: 0.75px;
+    width: 900px;
+    font-size: 24px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
